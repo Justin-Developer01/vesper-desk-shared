@@ -1,9 +1,10 @@
 /**
- * Draft API contract for the read-mostly endpoints vesper-desk-web needs.
- * As of 2026-09-24 neither project has a backend at all — these types are a
- * starting point to build the real API against, not a description of
- * something that exists yet. Version the real endpoints under /v1/ per the
- * coordination plan once they're implemented.
+ * API contract for vesper-desk-web's read-mostly endpoints.
+ * `LatestRelease`/`ReleaseAsset` mirror vesper-desk-backend's live
+ * `GET /v1/download/latest/info` response shape (see
+ * vesper-desk-backend/src/routes/download.ts) — keep the two in sync.
+ * `ChangelogEntry` and `PricingPlan` remain draft stubs for endpoints that
+ * don't exist yet.
  */
 
 export interface ReleaseAsset {
